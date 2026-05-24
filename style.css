@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Space+Grotesk:wght@400;500;700&family=Inter:wght@300;400;500&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -24,20 +23,19 @@ h1, h2, h3 {
     font-family: 'Space Grotesk', sans-serif;
 }
 
-nav {
-    background-color: var(--lemon);
+ nav {
+    background-color: var(--black);
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
-    text-align: center;
-   
+    align-items: center;
 }
 
 nav .logo {
-    font-family: 'Space Grotesk', sans-serif;
+     font-family: 'Space Grotesk', sans-serif;
     font-size: 1.2rem;
     font-weight: 700;
-    color: var(--black);/*changed from neon purple*/
+    color: white; /*changed from var(--lemon) to white for better contrast*/
 }
 
 nav ul {
@@ -47,71 +45,120 @@ nav ul {
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: var(--black);/*changed from neon purple*/
+   text-decoration: none;
+    color: white;
     font-family: 'Inter', sans-serif;
     font-size: 0.95rem;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--neon-purple);
+    color: white;
+    background-color: var(--neon-purple);
+    padding: 8px 16px;
+    border-radius: 20px;
 }
 
 nav ul li a.active {
-    color: var(--neon-purple);
+    color: white;
     font-weight: 500;
 }
-nav .hero {
+
+.hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 100px 40px;
+    padding: 80px 200px;
     min-height: 80vh;
     width: 100%;
+    background-color: var(--lemon);
 }
 
-nav .hero h1 {
-    font-size: 3.5rem;
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.hero-greeting {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.hero h1 {
+    font-family: 'Cormorant Garamond ', serif;
+    font-size: 6rem;
     font-weight: 700;
-    color: var(--dark-grey);
-    margin-bottom: 20px;
-}
-
-.hero h1 span {
+    font-style: italic;
+    text-transform: uppercase;
     color: var(--neon-purple);
+    line-height: 1;
+    margin: 0;
 }
 
-.hero p {
+.hero-fullname {
+    font-family: 'Inter', sans-serif;
     font-size: 1.1rem;
-    color: var(--mid-grey);
-    letter-spacing: 2px;
+    font-weight: 400;
+    color: black;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
+
+.hero-matric {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: black;
+    letter-spacing: 2px;
+    opacity: 0.6;
+}
+
+.hero-tagline {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    border-left: 3px solid var(--neon-purple);
+    padding-left: 20px;
+}
+
+.hero-tagline p {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: black;
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+
 .about {
-    padding: 60px 200px;
+      padding: 80px 200px 40px 200px;
+    background-color: var(--lemon);
 }
 
 .about h2 {
-    font-family: 'Space Grotesk', sans-serif;
+     font-family: 'Space Grotesk', sans-serif;
     font-size: 2rem;
     font-weight: 700;
-    color: var(--dark-grey);
+    color: var(--black);
     margin-bottom: 20px;
 }
 
 .about p {
-    font-size: 1rem;
-    color: var(--mid-grey);
+     font-size: 1rem;
+    color: var(--black);
     line-height: 1.8;
     max-width: 700px;
 }
 .cards {
-    display: flex;
-    justify-content: center;
+      display: flex;
+    justify-content: flex-start;
     gap: 30px;
-    padding: 20px 200px 60px 200px;
+    padding: 40px 200px 80px 200px;
+    background-color: var(--lemon);
 }
 
 .card {
@@ -141,9 +188,10 @@ nav .hero h1 {
     line-height: 1.7;
 }
 .cta {
-    display: flex;
+     display: flex;
     justify-content: center;
-    padding: 20px 0 80px 0;
+    padding: 60px 0;
+    background-color: var(--black);
 }
 
 .cta-button {
@@ -489,4 +537,17 @@ nav .hero h1 {
 
 .form-button:hover {
     background-color: var(--dark-grey);
+}
+
+.hero-image {
+    margin-left: auto;
+}
+
+.hero-image img {
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 50%;
+    border: 4px solid var(--neon-purple);
 }
