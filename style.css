@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lemon: #e2e1b9;
+    --neon-purple: #BC13FE;
+    --black: #000000;
+    --lemon : #e2e1b9;
+}
+
+body {
+    background-color: var(--lemon);
+    color: var(--black);
+    font-family: 'Inter', sans-serif
+    
+}
+
+h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+nav {
+    background-color: var(--lemon);
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+
+nav .logo {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--black);/*changed from neon purple*/
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--black);/*changed from neon purple*/
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--neon-purple);
+}
+
+nav ul li a.active {
+    color: var(--neon-purple);
+    font-weight: 500;
+}
+nav .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 40px;
+    min-height: 80vh;
+    width: 100%;
+}
+
+nav .hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: var(--neon-purple);
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: var(--mid-grey);
+    letter-spacing: 2px;
+}
+.about {
+    padding: 60px 200px;
+}
+
+.about h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    line-height: 1.8;
+    max-width: 700px;
+}
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px 200px 60px 200px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: var(--mid-grey);
+    line-height: 1.7;
+}
+.cta {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 80px 0;
+}
+
+.cta-button {
+    background-color: var(--neon-purple);
+    color: white;
+    text-decoration: none;
+    padding: 15px 40px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--dark-grey);
+}
+.page-hero {
+    padding: 80px 200px 40px 200px;
+}
+
+.page-hero h1 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 15px;
+}
+
+.page-hero h1 span {
+    color: var(--neon-purple);
+}
+
+.page-hero p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    line-height: 1.8;
+}
+.github {
+    padding: 40px 20px;
+    border-left: 4px solid var(--neon-purple);
+    margin: 0 200px 60px 200px;
+}
+
+.github h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 15px;
+}
+
+.github p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.github-button {
+    background-color: var(--dark-grey);
+    color: white;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.github-button:hover {
+    background-color: var(--neon-purple);
+}
+.coming {
+    padding: 40px 200px 80px 200px;
+}
+
+.coming h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+
+}
+.coming h2 span {
+    color: var(--neon-purple);
+}
+.coming > p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    margin-bottom: 30px;
+}
+
+
+.coming-cards {
+    display: flex;
+    gap: 30px;
+}
+
+.coming-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    flex: 1;
+    border-top: 4px solid var(--neon-purple);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.coming-card:hover {
+    transform: translateY(-5px);
+}
+
+.coming-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.coming-card p {
+    font-size: 0.9rem;
+    color: var(--mid-grey);
+    line-height: 1.7;
+}
+.courses {
+    padding: 40px 200px;
+}
+
+.courses h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.courses > p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    margin-bottom: 30px;
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.course-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--dark-grey);
+    border-left: 4px solid var(--neon-purple);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+}
+
+.courses h2 span {
+    color: var(--neon-purple);
+}
+.goals {
+    padding: 40px 200px 80px 200px;
+}
+
+.goals h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.goals h2 span {
+    color: var(--neon-purple);
+}
+
+.goals-statement {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    line-height: 1.8;
+    max-width: 700px;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+.goals-grid {
+    display: flex;
+    gap: 60px;
+}
+
+.goals-column h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 20px;
+}
+
+.goals-column ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.goals-column ul li {
+    font-size: 0.95rem;
+    color: var(--mid-grey);
+    line-height: 1.7;
+    padding-left: 15px;
+    border-left: 3px solid var(--neon-purple);
+}
+
+.connect {
+    padding: 40px 200px 80px 200px;
+}
+
+.connect h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.connect h2 span {
+    color: var(--neon-purple);
+}
+
+.connect > p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    margin-bottom: 30px;
+}
+
+.connect-links {
+    display: flex;
+    gap: 30px;
+}
+
+.connect-card {
+    background-color: white;
+    border-radius: 12px;
+    padding: 30px;
+    width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    border-top: 4px solid var(--neon-purple);
+    transition: transform 0.3s ease;
+}
+
+.connect-card:hover {
+    transform: translateY(-5px);
+}
+
+.connect-card h3 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.connect-card p {
+    font-size: 0.9rem;
+    color: var(--mid-grey);
+    line-height: 1.7;
+}
+
+.message {
+    padding: 40px 200px 80px 200px;
+}
+
+.message h2 {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-grey);
+    margin-bottom: 10px;
+}
+
+.message h2 span {
+    color: var(--neon-purple);
+}
+
+.message > p {
+    font-size: 1rem;
+    color: var(--mid-grey);
+    margin-bottom: 30px;
+}
+
+.message-form {
+    background-color: white;
+    border-radius: 16px;
+    padding: 40px;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid #E0E0E0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+    color: var(--dark-grey);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+    border-color: var(--neon-purple);
+}
+
+.form-button {
+    background-color: var(--neon-purple);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-button:hover {
+    background-color: var(--dark-grey);
+}
